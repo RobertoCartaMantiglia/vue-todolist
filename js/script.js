@@ -16,7 +16,30 @@ const { createApp } = Vue
 createApp({
   data() {
     return {
-      message: 'Hello Vue!'
+      title: "To do List:",
+      jobs : [
+        { 
+            text: 'Pulisci la casa',
+            done: false
+         }, 
+         { 
+            text: 'Fare la spesa',
+            done: false
+         },
+         { 
+            text: 'Portare fuori il cane',
+            done: false
+         },
+         { 
+            text: 'Andare in palestra',
+            done: false
+         },
+         { 
+            text: 'Fare il compito assegnato da Boolean per il pomeriggio',
+            done: false
+         },
+       
+      ],
     }
   }
 }).mount('#app')

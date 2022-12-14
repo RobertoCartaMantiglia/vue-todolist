@@ -18,15 +18,14 @@
         <main class="container">
             <div class="row justify-content-center">
                 <div class="col-7">
-                    <ul>           
+                    <ul>          
                         <li  v-for="job in jobs" class="py-3"
                         :class="(job.done === true) ? 'checked' : ''">
                             {{job.text}}
                         </li>
                     </ul>
-                </div>
-                //MILESTONE 1: creata una lista, sbarrato il compito se questo è stato eseguito
-
+                </div>                
+                <!-- MILESTONE 1: creata una lista, sbarrato il compito se questo è stato eseguito -->
             </div>
         </main>
 

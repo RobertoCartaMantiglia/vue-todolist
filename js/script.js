@@ -16,6 +16,7 @@ const { createApp } = Vue
 createApp({
   data() {
     return {
+      newTodoJob : '',
       title: "To do List:",
       jobs : [
         { 
@@ -41,5 +42,12 @@ createApp({
        
       ],
     }
+  },
+  methods: {
+    addNewJob(content){
+        this.jobs.push(content);
+        this.newTodoJob = '';
+    },
+
   }
 }).mount('#app')

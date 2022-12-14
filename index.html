@@ -12,10 +12,10 @@
  
     <div id="app">
         <header class="container text-center">
-            <h1>{{title}}</h1>
+            <h1 class="pb-3">{{title}}</h1>
             <div>
-                <input type="text" v-model="">
-                <button class="btn-primary">Aggiungi</button>
+                <input type="text" placeholder="inserisci una nuova attività" v-model="newTodoJob">
+                <button @click="addNewJob(newTodoJob)" class="btn-primary">Aggiungi</button>
             </div>
         </header>
 

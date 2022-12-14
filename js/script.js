@@ -20,7 +20,7 @@ createApp({
       jobs : [
         { 
             text: 'Pulisci la casa',
-            done: false
+            done: true
          }, 
          { 
             text: 'Fare la spesa',
@@ -28,7 +28,7 @@ createApp({
          },
          { 
             text: 'Portare fuori il cane',
-            done: false
+            done: true
          },
          { 
             text: 'Andare in palestra',

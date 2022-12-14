@@ -50,14 +50,17 @@ createApp({
             done: false,
         };
 
-        if(newJob.text != ''){
+        if(newJob.text != '' && (!this.jobs.includes(newJob.text))){
             this.jobs.push(newJob);         //pusho l'obj nel array
             this.newTodoJob = '';            //svuoto il valore messo nel input
         }else{            
-            alert("non hai inserito nulla");
-        }       
-         
+            alert("Inserisci un'attività da svolgere");
+        }         
     },
+    removeJob(objToRemove){
+        let objIndex = this.jobs.indexOf(objToRemove);  //creo una variabile che tenga traccia del indice del obj nel array
+        this.jobs.splice(objIndex, 1)  // uso la funzione splice per eliminare un obj dal array,il n. 1 specifica quanti elementi v
+    }
 
   }
 }).mount('#app')

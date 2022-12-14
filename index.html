@@ -25,9 +25,9 @@
                 <div class="col-7">
                     <ul>          
                         <li  v-for="job in jobs" class="py-3"
-                        :class="(job.done === true) ? 'checked' : ''">
-                        <i class="fa-regular fa-circle-xmark" class="pe-2"></i> 
-                        {{job.text}}
+                            :class="(job.done === true) ? 'checked' : '' ">
+                            <i class="fa-regular fa-circle-xmark" @click="removeJob(job)" class="pe-2"></i> 
+                            {{job.text}}
                         </li>
                     </ul>
                 </div>                

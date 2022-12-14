@@ -44,9 +44,13 @@ createApp({
     }
   },
   methods: {
-    addNewJob(content){
-        this.jobs.push(content);
-        this.newTodoJob = '';
+    addNewJob(){
+        let newJob = {    //creo un nuovo obj generico con le caratteristiche degli obj presenti nel array
+            text: this.newTodoJob,
+            done: false,
+        }
+        this.jobs.push(newJob);  //pusho l'obj nel array
+        this.newTodoJob = '';   //svuoto il valore messo nel input
     },
 
   }
